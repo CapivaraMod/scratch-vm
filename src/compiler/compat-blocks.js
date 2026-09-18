@@ -30,7 +30,9 @@ const stacked = [
     'sound_playuntildone',
     'sound_seteffectto',
     'sound_setvolumeto',
-    'sound_stopallsounds'
+    'sound_stopallsounds',
+    'wikipedia_clear_cache',
+    'wikipedia_set_language'
 ];
 
 const inputs = [
@@ -40,7 +42,13 @@ const inputs = [
     'sensing_loudness',
     'sensing_online',
     'sensing_userid',
-    'sound_volume'
+    'sound_volume',
+    'wikipedia_description',
+    'wikipedia_image',
+    'wikipedia_link',
+    'wikipedia_page_exists',
+    'wikipedia_summary',
+    'wikipedia_title'
 ];
 
 module.exports = {

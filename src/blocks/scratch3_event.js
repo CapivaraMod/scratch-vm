@@ -16,6 +16,16 @@ class Scratch3EventBlocks {
                 KEY_OPTION: 'any'
             });
         });
+
+        // Escuta o evento de scroll emitido pelo stage (ver stage.jsx / render wrapper)
+        this.runtime.on('SCROLLED', direction => {
+            this.runtime.startHats('event_whenscrolled', {
+                SCROLL_OPTION: direction
+            });
+            this.runtime.startHats('event_whenscrolled', {
+                SCROLL_OPTION: 'any'
+            });
+        });
     }
 
     /**
@@ -58,6 +68,9 @@ class Scratch3EventBlocks {
             },
             event_whenbroadcastreceived: {
                 restartExistingThreads: true
+            },
+            event_whenscrolled: {
+                restartExistingThreads: false
             }
         };
     }
